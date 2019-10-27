@@ -17,7 +17,7 @@
       "type": "string",
       "required": true
     },
-    "authorId": {
+    "personId": {
       "type": "string",
       "required": true
     }
@@ -27,9 +27,15 @@
     "person": {
       "type": "belongsTo",
       "model": "person",
-      "foreignKey": "authorId"
+      "foreignKey": "personId"
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

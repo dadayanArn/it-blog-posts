@@ -13,10 +13,20 @@
     "city": {
       "type": "string",
       "required": true
+    },
+    "personId": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "person": {
+      "type": "belongsTo",
+      "model": "person",
+      "foreignKey": "personId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",

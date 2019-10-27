@@ -15,9 +15,21 @@
     "posts": {
       "type": "hasMany",
       "model": "posts",
-      "foreignKey": "authorId"
+      "foreignKey": "personId"
+    },
+    "meetup": {
+      "type": "hasMany",
+      "model": "meetup",
+      "foreignKey": "personId"
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

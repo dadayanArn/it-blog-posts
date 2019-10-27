@@ -6,17 +6,14 @@
     "validateUpsert": true
   },
   "properties": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
     "description": {
       "type": "string"
     },
-    "content": {
-      "type": "string"
-    },
     "author": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
       "type": "string",
       "required": true
     },
@@ -26,15 +23,13 @@
     }
   },
   "validations": [],
-  "relations": {},
-  "acls": [
-    {
-      "accessType": "EXECUTE",
-      "principalType": "ROLE",
-      "principalId": "$unauthenticated",
-      "permission": "DENY",
-      "property": "post"
+  "relations": {
+    "person": {
+      "type": "belongsTo",
+      "model": "person",
+      "foreignKey": "authorId"
     }
-  ],
+  },
+  "acls": [],
   "methods": {}
 }

@@ -35,6 +35,10 @@
     "dataSource": "db",
     "public": false
   },
+  "person": {
+    "dataSource": "db",
+    "public": true
+  },
   "posts": {
     "dataSource": "db",
     "public": true

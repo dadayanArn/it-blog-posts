@@ -46,5 +46,13 @@
   "meetup": {
     "dataSource": "db",
     "public": true
+  },
+  "countries": {
+    "dataSource": "db",
+    "public": true
+  },
+  "airline": {
+    "dataSource": "db",
+    "public": true
   }
 }

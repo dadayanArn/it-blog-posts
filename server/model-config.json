@@ -54,5 +54,9 @@
   "airline": {
     "dataSource": "db",
     "public": true
+  },
+  "bookings": {
+    "dataSource": "db",
+    "public": true
   }
 }

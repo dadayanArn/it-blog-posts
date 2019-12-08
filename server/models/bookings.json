@@ -1,0 +1,25 @@
+{
+  "name": "bookings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "airline": {
+      "type": "string",
+      "required": true
+    },
+    "flyDate": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,46 @@
+{
+  "name": "roomBookings",
+  "plural": "roomBookings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "personName": {
+      "type": "string",
+      "required": true
+    },
+    "roomNumber": {
+      "type": "number",
+      "required": true
+    },
+    "roomId": {
+      "type": "number",
+      "required": true
+    },
+    "personId": {
+      "type": "number",
+      "required": true
+    },
+    "bookedAt": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "visitors": {
+      "type": "belongsTo",
+      "model": "visitors",
+      "foreignKey": "personId"
+    },
+    "rooms": {
+      "type": "belongsTo",
+      "model": "rooms",
+      "foreignKey": "roomId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,37 @@
+{
+  "name": "visitors",
+  "plural": "visitors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "personName": {
+      "type": "string",
+      "required": true
+    },
+    "personId": {
+      "type": "string",
+      "required": true
+    },
+    "cardNumber": {
+      "type": "string",
+      "required": true
+    },
+    "createdDate": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "roomBookings": {
+      "type": "hasMany",
+      "model": "roomBookings",
+      "foreignKey": "personId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

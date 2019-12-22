@@ -1,0 +1,41 @@
+{
+  "name": "rooms",
+  "plural": "rooms",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "bookedAt": {
+      "type": "string",
+      "required": true
+    },
+    "floor": {
+      "type": "number",
+      "required": true
+    },
+    "beds": {
+      "type": "number",
+      "required": true
+    },
+    "balcony": {
+      "type": "boolean",
+      "required": true
+    },
+    "roomId": {
+      "type": "number",
+      "required": true
+    },
+    "available": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {},
+  "protected": ["available"]
+}

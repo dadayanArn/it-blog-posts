@@ -58,5 +58,17 @@
   "bookings": {
     "dataSource": "db",
     "public": true
+  },
+  "rooms": {
+    "dataSource": "db",
+    "public": true
+  },
+  "visitors": {
+    "dataSource": "db",
+    "public": true
+  },
+  "roomBookings": {
+    "dataSource": "db",
+    "public": true
   }
 }

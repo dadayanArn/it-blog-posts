@@ -9,7 +9,7 @@
   "properties": {
     "bookedAt": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "floor": {
       "type": "number",

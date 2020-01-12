@@ -70,5 +70,13 @@
   "roomBookings": {
     "dataSource": "db",
     "public": true
+  },
+  "views": {
+    "dataSource": "db",
+    "public": true
+  },
+  "attachment": {
+    "dataSource": "storage",
+    "public": true
   }
 }
